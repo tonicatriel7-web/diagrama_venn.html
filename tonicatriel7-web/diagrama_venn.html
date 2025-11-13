@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diagrama Venn Vocacional</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .venn {
+            width: 800px;
+            height: 600px;
+            position: relative;
+        }
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .circle1 {
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 182, 193, 0.8);
+            top: 50px;
+            left: 100px;
+        }
+        .circle2 {
+            width: 300px;
+            height: 300px;
+            background: rgba(152, 251, 152, 0.8);
+            top: 50px;
+            right: 100px;
+        }
+        .circle3 {
+            width: 300px;
+            height: 300px;
+            background: rgba(135, 206, 235, 0.8);
+            bottom: 50px;
+            left: 100px;
+        }
+        .circle4 {
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 250, 205, 0.8);
+            bottom: 50px;
+            right: 100px;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border: 3px solid black;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="venn">
+        <div class="circle circle1">
+            <div>
+                <div class="title">LO QUE ME GUSTA</div>
+                <div class="subtitle">Pasiones · Intereses · Actividades disfrutadas</div>
+            </div>
+        </div>
+        <div class="circle circle2">
+            <div>
+                <div class="title">PARA LO QUE SOY BUENO</div>
+                <div class="subtitle">Habilidades · Talentos · Capacidades</div>
+            </div>
+        </div>
+        <div class="circle circle3">
+            <div>
+                <div class="title">LO QUE ME PARECE IMPORTANTE</div>
+                <div class="subtitle">Valores · Principios · Causas</div>
+            </div>
+        </div>
+        <div class="circle circle4">
+            <div>
+                <div class="title">LO QUE EL MUNDO NECESITA</div>
+                <div class="subtitle">Problemas · Demandas · Necesidades sociales</div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="title">TU VOCACIÓN IDEAL</div>
+            <div class="subtitle">Carreras · Profesiones · Proyectos con propósito</div>
+        </div>
+    </div>
+</body>
+</html>
